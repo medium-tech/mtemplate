@@ -6,7 +6,7 @@ import logging
 
 from copy import copy
 from pathlib import Path
-import sys
+
 from typing import Optional
 from functools import reduce
 from collections import OrderedDict
