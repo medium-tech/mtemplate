@@ -1,0 +1,35 @@
+[build-system]
+requires = ['setuptools>=61.0']
+build-backend = 'setuptools.build_meta'
+
+[project]
+name = 'mtemplate'
+version = '0.0.1b1'
+authors = [
+  { name='Brad Corlett', email='admin@medium.technology' },
+]
+description = 'A template engine that extracts jinja templates from source code that is syntactically valid. This means the template itself can be run and tested.'
+readme = 'README.md'
+requires-python = '>=3.7'
+dependencies = [
+  'pyyaml == 6.0.2',
+  'Jinja2 == 3.1.4'
+]
+license = 'MIT'
+
+[project.urls]
+Homepage = "https://github.com/medium-tech/mtemplate"
+Documentation = "https://github.com/medium-tech/mtemplate/blob/main/README.md"
+Repository = "https://github.com/medium-tech/mtemplate"
+
+[tool.setuptools]
+include-package-data = true
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+"*" = ["*.yaml", "*.yml", "*.json", "*.jinja2", "*.html", "*.css", "*.js", ".md"]
+"mtemplate" = [
+  "examples/**"
+]
