@@ -2,6 +2,11 @@
 
 mtemplate is a code templating system that allows you to extract dynamic templates from syntactically valid code. Instead of writing templates in Jinja2 syntax (which can't be run directly), mtemplate embeds templating commands in language comments, allowing template applications to remain fully runnable and testable.
 
+**install**
+```bash
+pip install mtemplate
+```
+
 ## Table of Contents
 
 - [Overview](#overview)
